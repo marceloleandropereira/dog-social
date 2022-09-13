@@ -10,7 +10,7 @@ const Header = () => {
         <Link className={styles.logo} to="/" aria-label="Dogs - Home">
           <DogPaw className={styles.icon} />
         </Link>
-        <Link className={styles.login} to="/login">Login / Criar</Link>
+        <Link className={styles.login} to="/login">Login / Create</Link>
       </nav>
     </header>
   )
