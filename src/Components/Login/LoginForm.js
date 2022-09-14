@@ -44,7 +44,9 @@ const LoginForm = () => {
       <div className={styles.create}>
         <h2 className={styles.subtitle}>Create</h2>
         <p>Still don't have an account? Register on the site.</p>
-        <Link className={stylesButton.button} to="/login/create">Create</Link>
+        <Link className={stylesButton.button} to="/login/create">
+          Create
+        </Link>
       </div>
     </section>
   )
