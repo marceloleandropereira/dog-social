@@ -5,7 +5,7 @@ import { ReactComponent as DogPaw } from '../Assets/dog_paw.svg'
 import { UserContext } from '../UserContext'
 
 const Header = () => {
-  const { userData } = React.useContext(UserContext);
+  const { userData, userLogout } = React.useContext(UserContext);
 
   return (
     <header className={styles.header}>
@@ -15,8 +15,9 @@ const Header = () => {
         </Link>
         { userData ? 
           (
-            <Link className={styles.login} to="/conta">
+            <Link className={styles.login} to="/account">
               {userData.nome}
+              <button onClick={userLogout}>Sair</button>
             </Link>
           ) : (
             <Link className={styles.login} to="/login">
