@@ -5,10 +5,10 @@ const types = {
     regex: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
     message: 'Email invalid'
   },
-  password: {
-    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
-    message: `Your password must contain at least: 1 digit, 1 lower case, 1 upper case and 8 characters`
-  }
+  // password: {
+  //   regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
+  //   message: `Your password must contain at least: 1 digit, 1 lower case, 1 upper case and 8 characters`
+  // }
 }
 
 const useForm = (type) => {
